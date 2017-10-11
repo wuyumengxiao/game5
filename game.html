@@ -1043,7 +1043,7 @@
         var index=$(this).index();
         function timedMsg()
         {
-            var t2=setTimeout(bb(),3000)
+            var t2=setTimeout(function(){bb()},1000)
         }
         function bb(){
             $('#stage-right').css('display','none');
@@ -1066,7 +1066,7 @@
     $('#backpack .box').each(function(index,value){
         function timedMsg2()
         {
-            var t3=setTimeout(cc(),3000)
+            var t3=setTimeout(function(){cc()},1000)
         }
         function cc(){
             $('#backpack').css('display','none');
@@ -1079,7 +1079,7 @@
     //propsDetails 道具-详情
     function timedMsg3()
     {
-        var t4=setTimeout(dd(),3000)
+        var t4=setTimeout(function(){dd()},1000)
     }
     function dd(){
         $('#propsDetails').css('display','none');
@@ -1095,7 +1095,7 @@
     //chooseObj 道具-选择使用对象 line
     function timedMsg4()
     {
-        var t5=setTimeout(ee(),3000)
+        var t5=setTimeout(function(){ee()},1000)
     }
     function ee(){
         $('#chooseObj').css('display','none');
