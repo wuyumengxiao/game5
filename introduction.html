@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>赛事介绍</title>
+    <script src="js/jquery-1.8.min.js"></script>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<body id="introduction" style="background-image: url('img/iPhone 6 Copy 12bg@3x.png');background-size:cover;background-repeat: no-repeat">
+
+    <img class="return" src="img/11@3x.png" alt="">
+    <div class="race">
+        <div class="title">第一赛段：上海绕城高速</div>
+        <h4 class="intro_title">【赛事简介】</h4>
+        <p>上海绕城高速公路又称A30公路，原名上海郊环高速公路，编号G1501，是环绕上海市区的一条高速公路。本赛段全长222公里，途径上海南汇，奉贤，金山，闵行，嘉定，宝山，青浦，闸北，浦东新区，松江等主要城区。</p>
+        <h4 >【赛事目标】</h4>
+        <p> 以到达终点为完成赛段目标，依据完成目标用户名次颁发勋章和奖励。</p>
+        <h4 >【赛事奖励】</h4>
+        <p>第一名：3000积分 + VE-AIR车载空气净化器一台</p>
+        <p>第二名：2000积分</p>
+        <p>第三名：1000积分</p>
+        <p>参与奖：500积分</p>
+    </div>
+    <div class="button">马上出发</div>
+
+</body>
+</html>
+<script>
+
+    $('.button').click(function(){
+        window.location.href='game.html';
+    })
+    $('.return').click(function(){
+        window.location.href='description.html';
+//        history.back();
+    })
+
+    //获取url后的字符数据
+    function GetRequest() {
+        var url = location.search; //获取url中"?"符后的字串
+        var theRequest = new Object();
+        if (url.indexOf("?") != -1) {
+            var str = url.substr(1);
+            strs = str.split("&");
+            for(var i = 0; i < strs.length; i ++) {
+                theRequest[strs[i].split("=")[0]]=(strs[i].split("=")[1]);
+            }
+        }
+        return theRequest;
+    }
+
+    //		不考虑设备dpr的rem布局
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                if(clientWidth>=640){
+                    docEl.style.fontSize = '100px';
+                }else{
+                    docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+                }
+            };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>

@@ -1,0 +1,169 @@
+html,
+body,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+pre,
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+table,
+th,
+td,
+figure,
+figcaption,
+em {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0; }
+
+input,
+select,
+textarea,
+button {
+  vertical-align: middle;
+  font-size: 13px;
+  font-family: "Microsoft Yahei", Verdana, Arial; }
+
+button {
+  cursor: pointer;
+  background: none; }
+
+img {
+  border: 0;
+  vertical-align: middle; }
+
+a {
+  color: #666;
+  text-decoration: none;
+  outline: 0;
+  blr: expression(this.onFocus=this.blur()); }
+  a:hover {
+    color: #246db9;
+    text-decoration: none; }
+
+.list-unstyled {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none; }
+  .list-unstyled > li {
+    padding-left: 0 !important;
+    list-style: none; }
+
+* {
+  outline: 0; }
+
+.pull-left {
+  float: left;
+  display: inline; }
+
+.pull-right {
+  float: right;
+  display: inline; }
+
+.text-center {
+  text-align: center; }
+
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+.clear {
+  clear: both;
+  *zoom: 1;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+  overflow: hidden; }
+
+html,
+body {
+  color: #666;
+  font-size: 13px;
+  font-family: "Microsoft Yahei", Verdana, Arial;
+  height: 100%;
+  background: #fff; }
+
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+#description {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+  #description .return {
+    display: block;
+    width: 0.546rem;
+    height: 0.546rem;
+    padding: 0.1365rem;
+    margin-left: 0.033467rem; }
+  #description .game {
+    width: 100%;
+    padding: 0 0.512rem;
+    font-size: 0.2389rem;
+    color: #fff;
+    line-height: 0.3754rem;
+    box-sizing: border-box; }
+    #description .game .title {
+      padding: 0;
+      width: 4.2496rem;
+      height: 0.9728rem;
+      font-size: 0.4096rem;
+      color: #FFA95B;
+      font-weight: 400;
+      margin: 0 auto;
+      margin-top: 0.3754rem;
+      text-align: center;
+      line-height: 0.9728rem; }
+    #description .game .probably {
+      margin-top: 0.375467rem; }
+    #description .game .des_title {
+      margin-top: 0.768rem; }
+    #description .game .limit {
+      font-weight: normal;
+      margin-top: 0.49493rem; }
+  #description .button {
+    width: 5.7173rem;
+    height: 0.751rem;
+    background: #48609A;
+    border-radius: 1.3312rem;
+    font-size: 0.273rem;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 0.751rem;
+    margin: 0 auto;
+    margin-top: 0.785rem; }
+
+/*# sourceMappingURL=description.css.map */
