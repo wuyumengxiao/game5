@@ -354,8 +354,7 @@ html {
     width: 5.72rem;
     height: 7.75rem;
     border-radius: 0.1365rem;
-    background: #F8F7F7;
-    overflow: hidden; }
+    background: #F8F7F7; }
     #game #backpack .title {
       width: 100%;
       height: 1.365rem;
@@ -368,8 +367,12 @@ html {
       display: flex;
       align-items: center;
       justify-content: space-between; }
-      #game #backpack .title img {
-        height: 1.14rem; }
+      #game #backpack .title .img {
+        height: 1.14rem;
+        margin-right: -0.6rem; }
+      #game #backpack .title .closeAll {
+        height: 0.546rem;
+        margin-top: -1.273rem; }
     #game #backpack .props {
       height: 6.38rem;
       width: 100%;
@@ -544,8 +547,7 @@ html {
     width: 5.72rem;
     height: 7.75rem;
     border-radius: 0.1365rem;
-    background: #F8F7F7;
-    overflow: hidden; }
+    background: #F8F7F7; }
     #game #medal .title {
       width: 100%;
       height: 1.365rem;
@@ -558,8 +560,12 @@ html {
       display: flex;
       align-items: center;
       justify-content: space-between; }
-      #game #medal .title img {
-        height: 1.14rem; }
+      #game #medal .title .img {
+        height: 1.14rem;
+        margin-right: -1.4rem; }
+      #game #medal .title .closeAll {
+        height: 0.546rem;
+        margin-top: -1.273rem; }
     #game #medal .bgBox {
       width: 100%;
       height: 6.38rem;
@@ -624,8 +630,7 @@ html {
     width: 5.72rem;
     height: 7.75rem;
     border-radius: 0.1365rem;
-    background: #F8F7F7;
-    overflow: hidden; }
+    background: #F8F7F7; }
     #game #gameSetUp .title {
       width: 100%;
       height: 1.365rem;
@@ -633,13 +638,17 @@ html {
       font-size: 0.44rem;
       color: #fff;
       background: #47609A;
-      padding: 0 0.58rem  0  0.3328rem;
+      padding: 0 0.3328rem  0  0.3328rem;
       box-sizing: border-box;
       display: flex;
       align-items: center;
       justify-content: space-between; }
-      #game #gameSetUp .title img {
-        height: 1.14rem; }
+      #game #gameSetUp .title .img {
+        height: 1.14rem;
+        margin-right: -1.8rem; }
+      #game #gameSetUp .title .closeAll {
+        height: 0.546rem;
+        margin-top: -1.273rem; }
     #game #gameSetUp .box {
       padding: 0 0.34rem;
       box-sizing: border-box; }

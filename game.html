@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -11,6 +11,7 @@
     <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=S35rmEiLHeRUP24ye6LcDDWQFdadnnNO"></script>
     <script src="js/LuShu_min.js"></script>
     <title>游戏</title>
+    <link rel="stylesheet" href="sass/style.scss">
 </head>
 
 <body id="game">
@@ -67,7 +68,8 @@
     <div id="backpack">
         <div class="title">
             <span>我的后备箱</span>
-            <img class="pull-right" src="img/16@3x.png" alt="">
+            <img class="img pull-right " src="img/16@3x.png" alt="">
+            <img class="closeAll pull-right" src="img/12@3x.png" alt="">
         </div>
         <div class="props">
             <div class="box pull-left">
@@ -80,7 +82,7 @@
                 <p>禁止通行</p>
             </div>
             <div class="box pull-left">
-                <div >
+                <div>
                     <div class="num pull-right">3</div>
                 </div>
                 <div class="img">
@@ -250,7 +252,8 @@
     <div id="medal">
         <div class="title">
             <span>我的勋章</span>
-            <img class="pull-right" src="img/17@3x.png" alt="">
+            <img class="img pull-right" src="img/17@3x.png" alt="">
+            <img class="closeAll pull-right" src="img/12@3x.png" alt="">
         </div>
         <div class="bgBox">
             <div class="box pull-left">
@@ -338,7 +341,8 @@
     <div id="gameSetUp">
         <div class="title">
             <span>游戏设置</span>
-            <img class="pull-right" src="img/img5.png" alt="">
+            <img class="img pull-right" src="img/img5.png" alt="">
+            <img class="closeAll pull-right" src="img/12@3x.png" alt="">
         </div>
         <div class="box">
             <div class="line line1">
@@ -913,6 +917,13 @@
     //    查看个人信息
     $('.close').click(function(){
         $(this).parent().css('display','none');
+        $('#stage-right').css('display','block');
+        $('#stage-top').css('display','block');
+        $('#stage-bottom').css('display','block');
+        $('#stage-go').css('display','block');
+    })
+    $('.closeAll').click(function(){
+        $(this).parent().parent().css('display','none');
         $('#stage-right').css('display','block');
         $('#stage-top').css('display','block');
         $('#stage-bottom').css('display','block');

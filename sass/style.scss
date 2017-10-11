@@ -292,7 +292,6 @@ html{
     height: 7.75rem;
     border-radius: 0.1365rem;
     background: #F8F7F7;
-    overflow: hidden;
 
     .title{
       width: 100%;
@@ -307,8 +306,14 @@ html{
       align-items: center;
       justify-content: space-between;
 
-      img{
+      .img{
         height: 1.14rem;
+        margin-right: -0.6rem;
+      }
+
+      .closeAll{
+        height: 0.546rem;
+        margin-top: -1.273rem;
       }
     }
 
@@ -524,7 +529,6 @@ html{
     height: 7.75rem;
     border-radius: 0.1365rem;
     background: #F8F7F7;
-    overflow: hidden;
 
     .title{
       width: 100%;
@@ -539,8 +543,14 @@ html{
       align-items: center;
       justify-content: space-between;
 
-      img{
+      .img{
         height: 1.14rem;
+        margin-right: -1.4rem;
+      }
+
+      .closeAll{
+        height: 0.546rem;
+        margin-top: -1.273rem;
       }
     }
     .bgBox{
@@ -623,7 +633,6 @@ html{
     height: 7.75rem;
     border-radius: 0.1365rem;
     background: #F8F7F7;
-    overflow: hidden;
 
     .title{
       width: 100%;
@@ -632,14 +641,20 @@ html{
       font-size: 0.44rem;
       color: #fff;
       background: #47609A;
-      padding:  0 0.58rem  0  0.3328rem;
+      padding:  0 0.3328rem  0  0.3328rem;
       box-sizing: border-box;
       display: flex;
       align-items: center;
       justify-content: space-between;
 
-      img{
+      .img{
         height: 1.14rem;
+        margin-right: -1.8rem;
+      }
+
+      .closeAll{
+        height: 0.546rem;
+        margin-top: -1.273rem;
       }
     }
     .box{
