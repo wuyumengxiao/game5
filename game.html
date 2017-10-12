@@ -632,10 +632,8 @@
     map.addOverlay(circle);
     map.setMinZoom(8);
 
-//    var opts = {type: BMAP_NAVIGATION_CONTROL_SMALL}
-//    map.addControl(new BMap.NavigationControl(opts ));        // 添加平移缩放控件
-//    map.addControl(new BMap.ScaleControl());             // 添加比例尺控件
-//    map.addControl(new BMap.OverviewMapControl());       //添加缩略地图控件
+    var opts = {anchor: BMAP_ANCHOR_BOTTOM_LEFT ,offset: new BMap.Size(24, 140) }
+    map.addControl(new BMap.NavigationControl(opts ));        // 添加平移缩放控件
 
 
     //用于描线的坐标点
