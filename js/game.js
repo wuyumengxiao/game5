@@ -432,7 +432,7 @@ var wave = (function () {
     return {start: start, stop: stop};
 }());
 wave.start();
-var page=['#backpack ','#medal ','','','#gameSetUp'];
+var page=['#backpack ','#medal','#ranking','','#gameSetUp'];
 $('#stage-right img').each(function(index,value){
     var index=$(this).index();
     function timedMsg()
